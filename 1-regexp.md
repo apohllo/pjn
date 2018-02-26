@@ -14,7 +14,7 @@
 * Wyrażenia regularne zawierają konstrukcje positive oraz negative lookahead oraz lookbehind. Przykładowo:
   * *positive lookahead* - wyrażenie `(\w+)(?= ma kota)` dopasuje się do łańcucha `Ala ma kota`, ale dopasowanie obejmie tylko słowo
   `Ala`.
-  * *negative lookbehind* - wyrażenie `(?!<starych )(zł) dopasuje się do łańcucha `10 złotych` ale nie do łańcucha `10
+  * *negative lookbehind* - wyrażenie `(?!<starych )(zł)` dopasuje się do łańcucha `10 złotych` ale nie do łańcucha `10
     starych złotych`.
 * Wyrażenie `\b` dopasowuje się do granicy słowa. Wyrażenie `psu` dopasuje się do słowa `zepsuć`, ale wyrażenie
   `\bpsu\b` dopasuje się wyłącznie do słowa `psu`. Warto zwrócić uwagę, że w Pythonie trzeba wprowadzić podwójny ukośnik
