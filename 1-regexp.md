@@ -18,7 +18,7 @@
     starych złotych`.
 * Wyrażenie `\b` dopasowuje się do granicy słowa. Wyrażenie `psu` dopasuje się do słowa `zepsuć`, ale wyrażenie
   `\bpsu\b` dopasuje się wyłącznie do słowa `psu`. Warto zwrócić uwagę, że w Pythonie trzeba wprowadzić podwójny ukośnik
-  (`\\bpsu\\b`) lub ozaczenie literalnego napisu (`r\bpsu\b`) aby ta sekwencja została poprawnie zinterpretowana.
+  (`\\bpsu\\b`) lub ozaczenie literalnego napisu (`r'\bpsu\b'`) aby ta sekwencja została poprawnie zinterpretowana.
   (Zastanów się dlaczego tak się dzieje).
 * Niektóre języki mają specjalne literały dla wyrażeń regularny - np. Perl i Ruby wykorzystują do tego ukośniki oraz
   operatory dopasowania do wyrażeń regularnych. Dzięki temu możliwe jest tworzenie warunków takich jak `string =~
