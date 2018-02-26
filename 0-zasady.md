@@ -1,6 +1,6 @@
 # Zasady oceniania
 
-1. Ocena wystawiana jest na podstawie zadań oddawanych w trakcie zajęć oraz jednego kolokwium praktycznego.
+1. Ocena wystawiana jest na podstawie zadań oddawanych w trakcie zajęć oraz kolokwium praktycznego.
 1. Całkowita liczba punktów, którą można otrzymać za zadania wynosi 30, a za kolokwium 10.
 1. Stosowana jest standardowa skala ocen AGH.
 1. Czas realizacji zadania to 1 tydzień, tzn. jeśli zadanie ogłaszane jest we wtorek, to musi zostać oddane do końca
@@ -19,6 +19,7 @@
    niedostateczna.
 1. W przypadku nieotrzymania zaliczenia przed rozpoczęciem sesji poprawkowej, w drugim terminie uzyskiwana jest ocena
    niedostateczna.
-1. W trakcie sesji zwykłej będzie możliwość jednokrotnego przystąpienia do kolokwium zaliczeniowego.
-1. W trakcie sesji poprawkowej będzie możliwość jednokrotnego przystąpienia do kolokwium zaliczeniowego.
+1. W trakcie sesji zwykłej będzie możliwość jednokrotnego przystąpienia do kolokwium.
+1. W trakcie sesji poprawkowej będzie możliwość jednokrotnego przystąpienia do kolokwium.
+1. Nie ma możliwości poprawienia pozytywnej oceny zaliczeniowej.
 1. **Zarówno w trakcie sesji zwykłej jak i poprawkowej nie będzie możliwości oddania zaległych zadań**.
