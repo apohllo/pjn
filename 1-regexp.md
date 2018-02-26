@@ -20,6 +20,12 @@
   `\bpsu\b` dopasuje się wyłącznie do słowa `psu`. Warto zwrócić uwagę, że w Pythonie trzeba wprowadzić podwójny ukośnik
   (`\\bpsu\\b`) lub ozaczenie literalnego napisu (`r\bpsu\b`) aby ta sekwencja została poprawnie zinterpretowana.
   (Zastanów się dlaczego tak się dzieje).
-* Niektóre języki mają specjalne literały dla wyrażeń regularny -- np. Perl i Ruby wykorzystują do tego ukośniki oraz
+* Niektóre języki mają specjalne literały dla wyrażeń regularny - np. Perl i Ruby wykorzystują do tego ukośniki oraz
   operatory dopasowania do wyrażeń regularnych. Dzięki temu możliwe jest tworzenie warunków takich jak `string =~
   /\bpsu\b/`.
+* Działanie literału `\b` zależne jest jednak od tego jak rozumiane są litery. I tak wyrażenie `\bpsu\b` w Rubim
+  zostanie dopasowane do `psu` ale nie do `psuć`, ale w grepie zostanie dopasowane do obu tych przypadków, ponieważ `ć`
+  nie jest uznawane za literę.
+* Różnice pomiędzy sposobem interpretacji wyrażeń regularnych w różnych językach programowania powodują, że wyrażenia te
+  często nie mogą być przenoszone bezpośrednio z jednego języka do innego, bez zmiany ich znaczenia. Należy mieć to na
+  uwadze kiedy kopiuje się rozwiązania z Internetu.
