@@ -98,7 +98,7 @@ masz do dyspozycji zbiór orzeczeń w formacie:
 ```
 
 Zrealizuj następujące zadania:
-1. Wydostań wszystkie **wartości pieniężne** pojawiające się tekstach orzeczeń określonego roku, znormalizuj je i przedstaw ich
+1. Wydostań wszystkie **wartości pieniężne wyrażone w złotych** pojawiające się tekstach orzeczeń określonego roku, znormalizuj je i przedstaw ich
    rozkład w postaci histogramu.
 1. Jak w punkcie 1. ale zrób osobny wykres dla wartości **do 1 mln zł.** oraz **powyżej 1 mln zł.**
 1. Określ liczbę orzeczeń odwołujących się w określonym roku do **artykułu 445 Ustawy z dnia 23 kwietnia 1964 r. - Kodeks cywilny**.
