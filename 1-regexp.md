@@ -3,7 +3,7 @@
 ## Zadanie
 
 Pod adresem [http://apohllo.pl/texts/saos-dump-23.02.2018.tar.gz](http://apohllo.pl/texts/saos-dump-23.02.2018.tar.gz) 
-masz do dyspozycji zbiór orzeczeń w formacie<sup id="a1">[1](#f1)</sup> :
+masz do dyspozycji zbiór orzeczeń w formacie<sup id="a1">[1](#f1), [2](#f2)</sup> :
 
 ```json
 {
@@ -99,6 +99,8 @@ masz do dyspozycji zbiór orzeczeń w formacie<sup id="a1">[1](#f1)</sup> :
 
 <b id="f1">1</b> Lista orzeczenia w danym pliku dostępna jest pod kluczem `"items"`. Zbiór wszystkich plików stanowi
 pełną bazę orzeczeń. Nie należy się ograniczać do pojedynczego pliku! [↩](#a1)
+
+<b id="f2">2</b> Dokumentacja formatu dostępna jest w [API SAOS](https://www.saos.org.pl/help/index.php/dokumentacja-api/api-pobierania-danych). [↩](#a1)
 
 Zrealizuj następujące zadania:
 1. Wydostań wszystkie **wartości pieniężne wyrażone w złotych** pojawiające się tekstach orzeczeń określonego roku, znormalizuj je i przedstaw ich
