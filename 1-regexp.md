@@ -113,9 +113,9 @@ Zrealizuj następujące zadania:
 ## Warto wiedzieć
 
 * W niektórych językach programowania można dopasowywać klasy znaków Unicode:
-  * `\p{L}` - litery w dowolnym języku (np. a, ą, ć, ü, カ)
-  * `\p{Ll}` - mała litera w dowolnym języku
-  * `\p{Lu}` - wielka litera w dowolnym języku
+  * `\p{L}` - litery z dowolnego alfabetu (np. a, ą, ć, ü, カ)
+  * `\p{Ll}` - mała litera z dowolnego alfabetu
+  * `\p{Lu}` - wielka litera z dowolnego alfabetu
 * Nie wszystkie silniki dopasowujące wyrażenia regularne działają tak samo. Np. klasy Unicode nie są obsługiwane 
   w Pythonie, ale są obsługiwane w Rubim. Co prawda w Pythonie 3 `\w` dopasuje się do polskich liter, ale nie mamy
   możliwości odróżnienia, czy są to litery wielkie, czy małe.
