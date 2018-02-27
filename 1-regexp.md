@@ -97,7 +97,7 @@ masz do dyspozycji zbiór orzeczeń w formacie<sup id="a1">[1](#f1), [2](#f2)</s
 }
 ```
 
-<b id="f1">1</b> Lista orzeczenia w danym pliku dostępna jest pod kluczem `"items"`. Zbiór wszystkich plików stanowi
+<b id="f1">1</b> Lista orzeczeń w danym pliku dostępna jest pod kluczem `"items"`. Zbiór wszystkich plików stanowi
 pełną bazę orzeczeń. Nie należy się ograniczać do pojedynczego pliku! [↩](#a1)
 
 <b id="f2">2</b> Dokumentacja formatu dostępna jest w [API SAOS](https://www.saos.org.pl/help/index.php/dokumentacja-api/api-pobierania-danych). [↩](#a1)
