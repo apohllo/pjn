@@ -2,7 +2,8 @@
 
 ## Zadanie
 
-Masz do dyspozycji zbiór orzeczeń w formacie:
+Pod adresem [http://apohllo.pl/texts/saos-dump-23.02.2018.tar.gz](http://apohllo.pl/texts/saos-dump-23.02.2018.tar.gz) 
+masz do dyspozycji zbiór orzeczeń w formacie:
 
 ```json
 {
