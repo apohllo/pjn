@@ -113,7 +113,7 @@ Zrealizuj następujące zadania:
 ## Warto wiedzieć
 
 * W niektórych językach programowania można dopasowywać klasy znaków Unicode:
-  * `\p{L}` - litery w dowolnym języku (np. a, ą, ć, ü)
+  * `\p{L}` - litery w dowolnym języku (np. a, ą, ć, ü, カ)
   * `\p{Ll}` - mała litera w dowolnym języku
   * `\p{Lu}` - wielka litera w dowolnym języku
 * Nie wszystkie silniki dopasowujące wyrażenia regularne działają tak samo. Np. klasy Unicode nie są obsługiwane 
