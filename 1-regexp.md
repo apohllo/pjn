@@ -98,7 +98,7 @@ masz do dyspozycji zbiór orzeczeń w formacie<sup id="a1">[1](#f1)</sup> :
 ```
 
 <b id="f1">1</b> Lista orzeczenia w danym pliku dostępna jest pod kluczem `"items"`. Zbiór wszystkich plików stanowi
-pełną bazę orzeczeń. Nie należy się ograniczać do pojedynczego pliku![↩](#a1)
+pełną bazę orzeczeń. Nie należy się ograniczać do pojedynczego pliku! [↩](#a1)
 
 Zrealizuj następujące zadania:
 1. Wydostań wszystkie **wartości pieniężne wyrażone w złotych** pojawiające się tekstach orzeczeń określonego roku, znormalizuj je i przedstaw ich
