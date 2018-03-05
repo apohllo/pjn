@@ -10,8 +10,8 @@
    oraz większą optymalizację dostępu do danych strukturalnych, trudniej jest je dostosować do wybranego języka.
 1. Zarówno dla SOLRa jak i ES istnieją pluginy wspierające język polski, np. https://github.com/allegro/elasticsearch-analysis-morfologik 
 1. Działanie FTSów oparte jest o tzw. odrócony indeks - po załadowaniu dokumentu, jest on dzielony na tokeny (niezależne
-   elementy tekstu - w przybliżeniu słowa), które następnie są one przetwarzane przez filtry. Tak przetworzone tokeny
-   trafiają do indeksu, którego kluczami są tokeny, a wartościami miejsca ich wystąpień w dokumentach.
+   elementy tekstu - w przybliżeniu słowa), które następnie są przetwarzane przez filtry. Tak przetworzone tokeny
+   trafiają do indeksu, którego kluczami są tokeny, a wartościami - miejsca ich wystąpień w dokumentach.
 1. Minimalna konfiguracja FTSa wymaga określenia dwóch własności: zasad podziału tekstu na tokeny oraz łańcucha
    przekształceń (filtrów), którym poddawane są tokeny. 
 1. FTSy posiadają zazwyczaj wiele wbudowanych tokenizerów - mogą np. uwzględniać takie elementy jak znaczniki HTML,
@@ -21,18 +21,18 @@
    _url/email tokenizer_ (który działa podobnie do _standard tokenizera_ ale dodatkowo rozpoznaje adresy URL i e-mail
    jako kompletne tokeny). 
 1. Niektóre znaki (np. przecinki, kropki) mogą być usuwane już na etapie podziału tekstu na tokeny.
-1. Wśród popularnych filtrów można wymienić: zamianą na małe litery, zastępowanie liter ze znakami diakrytycznymi (np.
+1. Wśród popularnych filtrów można wymienić: zamianę na małe litery, zastępowanie liter ze znakami diakrytycznymi (np.
    litery ą) ich odpowiednikami z alfabetu łacińskiego (ą -> a), filtrowanie słów z tak zawnej stop-listy (listy
    najpopularniejszych słów, takich jak _i_, _a_, _w_, itp.) oraz **lematyzatory**.
 1. Lematyzacja polega na sprowadzeniu słowa do jego formy podstawowej, np. dla formy _psu_ jest to forma _pies_
-   (np. dla rzeczownika jest to mianownik liczby pojedynczej). 
+   (dla rzeczownika formą podstawową jest forma mianownik liczby pojedynczej - o ile występuje). 
 1. W języku występuje wiele form wieloznacznych - przykładowo forma _goli_ może mieć następujące formy podstawowe:
    _gol_, _golić_, _goły_. 
 1. Czytając tekst człowiek może bez problemu wskazać formę podstawową. Dla komputera stanowi to jednak duże wyzwanie, a
    algorytmy lematyzacyjne uwzględniające kontekst nie są trywialne. Dlatego w FTSach problem ten rozwiązywany jest
    pragmatycznie - dla każdej formy w tekście jej wystąpienie jest przyporządkowywane do **wszystkich** form
-   podstawowych, z którymi jest ona kompatybilna. Ponieważ ten sam proces realizowany jest w trakcie wyszukiwania
-   tekstu, użycie innej formy tekstowej, niż forma występująca w tekście powoduje dopasowanie jednej formy do drugiej,
+   podstawowych, z którymi jest ona kompatybilna. Ponieważ ten sam proces realizowany jest w trakcie wyszukiwania,
+   użycie innej formy tekstowej niż forma występująca w tekście, powoduje dopasowanie jednej formy do drugiej,
    poprzez wspólną formę podstawową. Np. jeśli w dokumencie jest zdanie: _W trakcie meczu padły 2 **gole**_, a zapytanie ma
    postać: _Ile **goli** padło w meczu?_, to algorytm lematyzacji powiąże oba dokumenty, dzięki istnieniu wspólnej formy
-   podstawowej _gol_.
+   podstawowej _**gol**_.
