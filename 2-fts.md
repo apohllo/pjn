@@ -2,6 +2,25 @@
 
 ## Zadania
 
+1. Zainstaluj ElasticSearch (ES)
+1. Zainstaluj w ES plugin do obsługi języka polskiego https://github.com/allegro/elasticsearch-analysis-morfologik 
+1. Zdefiniuj w ES analizator zawierający następujące elementy (tekst w języku polskim):
+   1. standardowy tokenizer
+   1. filtr lematyzujący oparty o morfologika
+1. Zdefiniuj w ES indeks do przechowywania orzeczeń sądów zawierający następujące elementy:
+   1. treść orzeczenia - typu: tekst w języku polskim
+   1. datę orzeczenia - typu: data
+   1. sygnaturę orzeczenia - typu: słowo kluczowe
+   1. imiona i nazwiska sędziów wydających orzeczenie - typu: tablica
+1. Załaduj dane z wybranego roku do ESa
+1. Znajdź liczbę orzeczeń, w których występuje słowo **szkoda**.
+1. Znajdź liczbę orzeczeń, w których występuje fraza **trwały uszczerbek na zdrowiu**, dokładnie w tej kolejności ale w
+   dowolnej formie fleksyjnej.
+1. Jak wyżej, ale z uwzględnieniem możliwości wystąpienia maksymalnie 2 dodatkowych słów pomiędzy dowolnymi elementami
+   frazy.
+1. Określ 3 sędziów, którzy wydali największą liczbę orzeczeń w danym roku, wraz z liczbą wydanych orzeczeń.
+1. Przedstaw histogram liczby orzeczeń w zależności od miesiąca.
+
 ## Przydatne infromacje
 
 1. Silniki Full Text Search (FTS) są wyspecjalizowane w przechowywaniu oraz wyszukiwaniu danych tekstowych.
