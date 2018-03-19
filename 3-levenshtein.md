@@ -21,15 +21,16 @@
 ## Przydatne informacje
 
 1. Odległość edycyjna, zwana również odległością Levenshteina to miara określona dla dowolnej pary łańcuchów znaków.
-   Miara ta określa minilaną ilość operacji dodania, usunięcia oraz zamiany znaków jest niezbędnych aby zamienić łańcuch _a_ w
+   Miara ta określa minilaną ilość operacji dodania, usunięcia oraz zamiany znaków jaka jest niezbędna aby zamienić łańcuch _a_ w
    łańcuch _b_. Miara ta jest symetryczna, dlatego kolejność łańcuchów nie ma znaczenia.
 1. Implementacja algorytmu obliczającego odległość Levenshteina jest najczęściej realizowana w formie algorytmu
    dynamicznego, który wykorzystuje wcześniejsze wyniki, w celu przyspieszenia obliczeń - 
    zob. [artykuł w Wikipedii](https://en.wikipedia.org/wiki/Levenshtein_distance).
 1. W przypadku korekty błędnych słów miara Levenshtaina może służyć do wyboru zbioru słów, które mają najmniejszą
    odległość od danego, błędnego słowa w sensie odległości Levenshteina. Jeśli zbiór ten składa się z wielu elementów,
-   nie wystarcza jednak do wybrania najbardziej prawdopodobnej korekty. Można to zrobić korzystając ze statystyki
-   wystąpień słów i wybrać słowo, które wśród słów o tej samej odległości, jest najbardziej prawdopodobne.
+   sama miara nie wystarcza do wybrania najbardziej prawdopodobnej korekty. Można to zrobić korzystając ze statystyki
+   wystąpień słów i wybrać słowo, które wśród słów o tej samej odległości, jest najbardziej prawdopodobne (ma największą
+   frekwencję w korpusie).
 1. Zwykle algorytm korekty nie wykorzystuje bezpośredniej implementacji algorytmu dla odległości Levenshteina. Zamiast
    tego na podstawie błędnego słowa generowane są wszystkie słowa o odległości 1, potem 2, itd. aż znaleziona zostanie
    słowo, które może stanowić korektę danego słowa - zob. [artykuł P. Norviga na ten temat](https://norvig.com/spell-correct.html).
