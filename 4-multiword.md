@@ -26,7 +26,7 @@ Celem zadania jest ekstracja wyrażeń wielosegmentowych, występujących w teks
 1. n-gramem nazywamy ciąg składający się z n słów.
 1. Punktowa informacja wzajemna jest miarą wykorzystywaną do oceny korelacji pomiędzy zjawiskami. 
    Zbudowana jest na założeniu, że zjawiska, których prawdopodobieństwo współwystępowania jest istotnie większe
-   od iloczynu prawdopodobieństw każdego ze zjawisk z osobna, to znaczy, że są one silnie skolerowane/
+   od iloczynu prawdopodobieństw każdego ze zjawisk z osobna, to znaczy, że są one silnie skolerowane.
 1. Statystyka logarytmiczna oparta o rozkład dwumienny (nie znalazłem niestety oficjalnego tłumaczenia ang. *log
    likelihood ratio*) ma bardziej rozbudowane założenia. W skrócie można napisać, że mierzy ona odchylenie pomiędzy
    współwystępowaniem, a wystepowanie na osobności, biorąc za podstawę rozkład dwumienny.
