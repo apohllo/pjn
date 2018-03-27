@@ -49,6 +49,6 @@ Celem zadania jest zapoznanie się z rolą taggera morfosyntaktycznego w przetwa
    słów w tekście oraz najczęściej dokonuje również lematyzacji słów. Przykładowo, w zdaniu "Ala ma kota" tagger
    powinien uznać, że słowo "ma" posiada formę podstawową "mieć" i jest czasownikiem zgodnie z opisem z p. 1.
 1. Dzięki taggerowi uzyskujemy szczegółowy opis morfosyntaktyczny słów w tekście, co umożliwia np.
-   filtrowanie wybór słów określonego typu (np. czasowników) lub posiadających określoną wartość innej cechy
+   wybór słów określonego typu (np. czasowników) lub posiadających określoną wartość innej cechy
    morfologicznej (np. rzeczowniki w *mianowniku*), budowanie bardziej złożonych narzędzi (np. parsera j.
    polskiego), wykorzystanie cech morfosyntaktycznych w alogorytmach uczenia maszynowego, itp.
