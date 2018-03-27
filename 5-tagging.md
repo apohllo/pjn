@@ -33,6 +33,9 @@ Celem zadania jest zapoznanie się z rolą taggera morfosyntaktycznego w przetwa
 
 ## Przydatne informacje
 
+1. Konfiguracja narzędzi do analizy morfosyntaktycznej (Maca i in.) opisana jest na [stronie Politechniki
+   Wrocławskiej](http://nlp.pwr.wroc.pl/redmine/projects/libpltagger/wiki/InstallOnUbuntu11).
+1. Instalacja biblioteki KRNNT opisana jest [na githubie](https://github.com/kwrobel-nlp/krnnt).
 1. Analizator morfosyntaktyczny jest narzędziem, które dla słów w tekście generuje możliwe interpretacje form bazowych
    oraz wartości kategorii gramatycznych. Przykładowo dla słowa "ma" może on wygnerować następujące interpretacje:
    ``` 
