@@ -26,7 +26,7 @@ Celem zadania jest zapoznanie się z rolą taggera morfosyntaktycznego w przetwa
    .	none
            .	interp	disamb
    ```
-   algorytm powinien zarejestrować następujące pary: "ala:subst mieć:fin" oraz "mieć:fin kot:subst".
+   algorytm powinien zarejestrować następujące pary: `ala:subst mieć:fin` oraz `mieć:fin kot:subst`.
 1. Oblicz statystykę logarytmiczna opartą o rozkład dwumienny dla tego zbioru.
 1. Przedstaw 30 pierwszych wyników, w których na pierwszy miejscu występuję rzeczownik, a na drugim miejscu rzeczownik
    lub przymiotnik.
