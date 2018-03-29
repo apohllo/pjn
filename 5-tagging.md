@@ -4,7 +4,7 @@ Celem zadania jest zapoznanie się z rolą taggera morfosyntaktycznego w przetwa
 
 ## Zadanie
 
-1. Pobierz obraz Dockera (TODO odnośnik do obrazu) zawierający następujące narzędzia:
+1. Pobierz [obraz Dockera](https://hub.docker.com/r/apohllo/krnnt/) zawierający następujące narzędzia:
    1. Morfeusz - słownik morfosyntaktyczny
    1. Corpus2 - narzędzie dostępu do korpusów
    1. Toki - tokenizer dla j. polskiego
