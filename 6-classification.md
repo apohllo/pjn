@@ -15,10 +15,9 @@ Celem zadania jest zapoznanie się z wybranymi metodami klasyfikacji tekstu.
    1. `R.*` - sprawy w zakresie prawa rodzinnego
    1. `W.*` - sprawy o wykroczenia
    1. `Am.*` - sprawy w zakresie prawa konkurencji
-   1. `A?U.*` - sprawy w zakresie ubezpieczeń społecznych
 1. Zmodyfikuj teksty orzeczeń tak by zawierały wyłącznie treść pojawiającą się po nagłówku "Uzasadnienie". Jesli nie ma
    uzasadnienia, pomiń dane orzeczenie.
-1. Z treści uzasanień usuń wszystkie wyrazy, które nie są słowami (w szczególności liczby, znaki przestankowe, itp.)
+1. Z treści uzasadnień usuń wszystkie wyrazy, które nie są słowami (w szczególności liczby, znaki przestankowe, itp.)
    oraz 20 słów, które najczęściej występują w tekstach orzeczeń (wykorzystaj dane z wcześniejszych zadań).
 1. Podziel zbiory z punktu 2 w taki sposób, aby 3/4 tekstów zostało użytych jako dane uczące, a 1/4 jako dane testowe.
    Zwróć uwagę na to, żeby zachowany był rozkład prawdopodobieństwa grup tematycznych, tzn. jeśli sprawy cywilne
