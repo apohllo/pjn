@@ -24,7 +24,7 @@ Celem zadania jest zapoznanie się z wybranymi metodami klasyfikacji tekstu.
    stanowią 10% wszystkich spraw, to powinny one stanowić 10% danych uczących oraz 10% danych testowych.
 1. Dla każdej grupy wytrenuj dwa klasyfikatory binarne wykorzystując algorytm Support Vector Machines (SVM) oraz wagowanie TF•IDF:
    1. Pierwszy klasyfikator jako cechy ma wykorzystywać tekstowe (odmienione) formy słów.
-   1. Drugi klasyfikator jako cechy ma wykorzstywać podstawowe formy słów (wykorzystaj dane z poprzedniego
+   1. Drugi klasyfikator jako cechy ma wykorzystywać podstawowe formy słów (wykorzystaj dane z poprzedniego
       laboratorium).
 1. Przedstaw wyniki klasyfikacji dla każdego zbioru tekstów z uwzględnieniem rozmiaru zbioru (liczby słów występujących
    w zbiorze) oraz wariantów algorytmu (formy tekstowe vs. formy podstawowe). Wyniki mają obejmować miary Precision,
@@ -33,5 +33,40 @@ Celem zadania jest zapoznanie się z wybranymi metodami klasyfikacji tekstu.
 
 ## Przydatne informacje
 
-1. Kasyfikacja tekstu z użyciem algorytmu SVM opisana jest w tutorialu 
+1. Klasyfikacja tekstu z użyciem algorytmu SVM opisana jest w tutorialu 
    [Davida Batisty](http://www.davidsbatista.net/blog/2017/04/01/document_classification/).
+1. Do klasyfikacji tekstów wykorzystywane jest podejście [bag-of-words](https://en.wikipedia.org/wiki/Bag-of-words_model), 
+   (BoW) tzn. kolejność słów w tekście nie jest znacząca,
+   istotne jest zaś to jak często dane słowo pojawia się w danym tekście. Ponadto każde słowo - niezależnie od jego
+   znaczenia - traktowana jest jako osobna składowa wektora. Dlatego w podejściu tym słowa o podobnym znaczeniu, lecz
+   odmiennej pisowni, traktowane są tak samo jak słowa, które nie mają podobnego znaczenia. Jest to zasadnicze
+   ograniczenie tego podejścia.
+1. Istotą metody BoW jest konstrukcja wektora, w którym każdemu słowu odpowiada jedna składowa. Przez ,,słowo'' można
+   rozumieć np. formę tekstową lub formę podstawową. W tym drugim przypadku wektor (dla j. polskiego) wektor będzie
+   znacznie mniejszy, gdyż wiele różnych form tekstowych będzie reprezentowanych przez jedą składową wektora. Niemiej
+   jednak rozmiar wektora jest bardzo duży - zwykle posiada on kilkadziesiąt do kilkuset tysięcy składowych. Aby
+   ograniczyć rozmiar wektora pomijane są słowa, które występują rzadziej niż n razy (np. rzadziej niż 5 razy).
+1. Algorytm [Support Vector Machines](https://en.wikipedia.org/wiki/Support_vector_machine) (SVM) 
+   jest algorytmem uczenia maszynowego stosowanym do klasyfikacji binarnej,
+   którego charakterystyczną cechą jest znajdowanie (w najprostszym przypadku) hiperpłaszczyzny wraz z maksymalnym
+   marginesem najlepiej separujących dwa zbiory danych. Po znalezieniu tej hiperpłaszczyzny klasyfikacja odbywa się
+   poprze określenie, po której stronie hiperpłaszczyzny znajduje się dany egzemplarz.
+1. SVM może być stosowany również w przypadku, gdy obszary nie są separowalne, poprzez zastosowanie tzw. 
+   [kerneli](https://en.wikipedia.org/wiki/Kernel_method) - przekształceń, które zastępują surowe wartości cech
+   klasyfikacyjnych, wartościami funkcji, dla której są one argumentami. Jednakże w przypadku klasyfikacji tekstów,
+   najczęściej stosuje się liniowe klasyfikatory SVM.
+1. [Wagowanie TF•IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) polega na modyfikacji wag przypisywanych składowym wektora. 
+   Wartość wagi danej składowej rośnie wraz ze wzrostem liczby wystąpień danego słowa (_term frequency_ TF) w
+   klasyfikowanym dokumencie, a maleje wraz ze wzrostem liczby wystąpień danego słowa w dokumentach korpusu (_inverted
+   document frequency_ IDF).
+1. Miary [Precision](https://en.wikipedia.org/wiki/Precision_and_recall) (pl. _czułość_), 
+   [Recall](https://en.wikipedia.org/wiki/Precision_and_recall) (pl. _swoistość_) oraz 
+   [F1](https://en.wikipedia.org/wiki/F1_score) (średnia harmoniczna _czułości_ i _swoistości_) są wykorzystywane w
+   algorytmach klasyfikujących do weryfikacji poprawności klasyfikacji. Pierwsza miara wskazuje procent poprawnych
+   odpowiedzi testu, w przypadku wykrycia cechy badanej, a druga miara wskazuje procent poprawnych odpowiedzi testu, w
+   przypadku braku wykrycia tej cechy. Trzecia miara najczęściej jest wykorzystywana do porównywania różnych algorytmów, 
+   ponieważ zwykle można zwiększać swoistość kosztem czułości i vice versa, modyfikując hiper-parametry algorytmu.
+1. Miary [micro-average] oraz [macro-average] są wykorzystywane do porównywania algorytmów klasyfikujących, w których
+   występuje wiele klas obiektów. Pierwsza miara odzwierciedla rozmiar danej klasy - im więcej obiektów należy do tej
+   klasy, tym ma ona większą wagę dla tej wartości, natomiast druga pomija ten aspekt, będąc średnią arytmetyczną
+   wartości Pr, Rc oraz F1 uzyskanych dla poszczególnych klas.
