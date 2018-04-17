@@ -15,7 +15,7 @@ Celem zadania jest zapoznanie się z wybranymi metodami klasyfikacji tekstu.
    1. `R.*` - sprawy w zakresie prawa rodzinnego
    1. `W.*` - sprawy o wykroczenia
    1. `Am.*` - sprawy w zakresie prawa konkurencji
-1. Zmodyfikuj teksty orzeczeń tak by zawierały wyłącznie treść pojawiającą się po nagłówku "Uzasadnienie". Jesli nie ma
+1. Zmodyfikuj teksty orzeczeń tak by zawierały wyłącznie treść pojawiającą się po nagłówku "Uzasadnienie". Jeśli nie ma
    uzasadnienia, pomiń dane orzeczenie.
 1. Z treści uzasadnień usuń wszystkie wyrazy, które nie są słowami (w szczególności liczby, znaki przestankowe, itp.)
    oraz 20 słów, które najczęściej występują w tekstach orzeczeń (wykorzystaj dane z wcześniejszych zadań).
@@ -42,14 +42,14 @@ Celem zadania jest zapoznanie się z wybranymi metodami klasyfikacji tekstu.
    odmiennej pisowni, traktowane są tak samo jak słowa, które nie mają podobnego znaczenia. Jest to zasadnicze
    ograniczenie tego podejścia.
 1. Istotą metody BoW jest konstrukcja wektora, w którym każdemu słowu odpowiada jedna składowa. Przez ,,słowo'' można
-   rozumieć np. formę tekstową lub formę podstawową. W tym drugim przypadku wektor (dla j. polskiego) wektor będzie
-   znacznie mniejszy, gdyż wiele różnych form tekstowych będzie reprezentowanych przez jedą składową wektora. Niemiej
+   rozumieć np. formę tekstową lub formę podstawową. W tym drugim przypadku (dla j. polskiego) wektor będzie
+   znacznie mniejszy, gdyż wiele różnych form tekstowych będzie reprezentowanych przez jedną składową wektora. Niemiej
    jednak rozmiar wektora jest bardzo duży - zwykle posiada on kilkadziesiąt do kilkuset tysięcy składowych. Aby
-   ograniczyć rozmiar wektora pomijane są słowa, które występują rzadziej niż n razy (np. rzadziej niż 5 razy).
+   ograniczyć rozmiar wektora można pominąć słowa, które występują rzadziej niż _n_ razy (np. rzadziej niż 5 razy).
 1. Algorytm [Support Vector Machines](https://en.wikipedia.org/wiki/Support_vector_machine) (SVM) 
    jest algorytmem uczenia maszynowego stosowanym do klasyfikacji binarnej,
    którego charakterystyczną cechą jest znajdowanie (w najprostszym przypadku) hiperpłaszczyzny wraz z maksymalnym
-   marginesem najlepiej separujących dwa zbiory danych. Po znalezieniu tej hiperpłaszczyzny klasyfikacja odbywa się
+   marginesem najlepiej separującej dwa zbiory danych. Po znalezieniu tej hiperpłaszczyzny klasyfikacja odbywa się
    poprze określenie, po której stronie hiperpłaszczyzny znajduje się dany egzemplarz.
 1. SVM może być stosowany również w przypadku, gdy obszary nie są separowalne, poprzez zastosowanie tzw. 
    [kerneli](https://en.wikipedia.org/wiki/Kernel_method) - przekształceń, które zastępują surowe wartości cech
