@@ -66,7 +66,8 @@ Celem zadania jest zapoznanie się z wybranymi metodami klasyfikacji tekstu.
    odpowiedzi testu, w przypadku wykrycia cechy badanej, a druga miara wskazuje procent poprawnych odpowiedzi testu, w
    przypadku braku wykrycia tej cechy. Trzecia miara najczęściej jest wykorzystywana do porównywania różnych algorytmów, 
    ponieważ zwykle można zwiększać swoistość kosztem czułości i vice versa, modyfikując hiper-parametry algorytmu.
-1. Miary [micro-average] oraz [macro-average] są wykorzystywane do porównywania algorytmów klasyfikujących, w których
-   występuje wiele klas obiektów. Pierwsza miara odzwierciedla rozmiar danej klasy - im więcej obiektów należy do tej
-   klasy, tym ma ona większą wagę dla tej wartości, natomiast druga pomija ten aspekt, będąc średnią arytmetyczną
+1. Miary [micro-average](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html#sklearn.metrics.precision_recall_fscore_support) 
+   oraz macro-average są wykorzystywane do porównywania algorytmów klasyfikujących, w których występuje wiele klas
+   obiektów. Pierwsza miara ignoruje przynależność klasyfikowanych przykładów do klasy i traktuje je jako należące do
+   jednej klasy, dzieląc je na przykłady pozytywne bądź negatywnych. Natomiast druga miara jest średnią arytmetyczną
    wartości Pr, Rc oraz F1 uzyskanych dla poszczególnych klas.
