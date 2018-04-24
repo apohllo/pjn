@@ -1,7 +1,5 @@
 # Słowosieć (WordNet)
 
-**Uwaga: treść zadania może ulec drobnej zmianie.**
-
 Celem zajęć jest zaznajomienie studentów ze Słowosiecią (WordNetem) - popularnym słownikiem zawierającym opis
 semantyczny słów.
 
