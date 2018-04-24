@@ -15,16 +15,16 @@ semantyczny słów.
 1. Znajdź bezpośrednie **hiponimy** rzeczownika _wypadek<sub>1</sub>_.
 1. Znajdź **hiponimy drugiego rzędu** dla rzeczownika _wypadek<sub>1</sub>_.
 1. Przedstaw w postaci grafu skierowanego (z etykietami dla krawędzi) relacje semantyczne pomiędzy następującymi grupami leksemów:
-   a. szkoda<sub>2</sub>, strata<sub>1</sub>, uszczerbek<sub>1</sub>, szkoda majątkowa<sub>1</sub>, 
+   1. szkoda<sub>2</sub>, strata<sub>1</sub>, uszczerbek<sub>1</sub>, szkoda majątkowa<sub>1</sub>, 
       uszczerbek na zdrowiu<sub>1</sub>, krzywda<sub>1</sub>, niesprawiedliwość<sub>1</sub>, nieszczęście<sub>2</sub>.
-   a. wypadek<sub>1</sub>, wypadek komunikacyjny<sub>1</sub>, kolizja<sub>2</sub>, zderzenie<sub>2</sub>,
+   1. wypadek<sub>1</sub>, wypadek komunikacyjny<sub>1</sub>, kolizja<sub>2</sub>, zderzenie<sub>2</sub>,
       kolizja drogowa<sub>1</sub>, bezkolizyjny<sub>2</sub>, katastrofa budowlana<sub>1</sub>, wypadek
       drogowy<sub>1</sub>.
-1. Znajdź wartość miary [podobieństwa semantycznego Leacocka-Chodorowa](http://dit.unitn.it/~p2p/RelatedWork/Matching/Budanitsky+Hirst-2006.pdf) 
+1. Znajdź wartość miary [pokrewieństwa semantycznego Leacocka-Chodorowa](http://dit.unitn.it/~p2p/RelatedWork/Matching/Budanitsky+Hirst-2006.pdf) 
    pomiędzy następującymi parami leksemów:
-   a. szkoda<sub>2</sub> - wypadek<sub>1</sub>,
-   a. kolizja<sub>2</sub> - szkoda majątkowa<sub>1</sub>,
-   a. nieszczęście<sub>2</sub> - katastrofa budowlana<sub>1</sub>.
+   1. szkoda<sub>2</sub> - wypadek<sub>1</sub>,
+   1. kolizja<sub>2</sub> - szkoda majątkowa<sub>1</sub>,
+   1. nieszczęście<sub>2</sub> - katastrofa budowlana<sub>1</sub>.
 
 ## Przydatne informacje
 
@@ -35,4 +35,9 @@ semantyczny słów.
       _budynku<sub>1</sub>_, a _zamek<sub>2</sub>_ jest **hiperonimem** _zatrzasku<sub>2</sub>_.
 1. Znaczenia słów w słowosieci są odróżniane za pomocą indeksu dolnego _zamek<sub>1</sub>_ oznacza pierwsze znaczenie, a
    _zamek<sub>2</sub>_ drugie znaczenie, itd.
-1. Biblioteka [NLTK](https://www.nltk.org/) dla Pythona posiada [implementację](http://www.nltk.org/howto/wordnet.html) miary Leacocka-Chodorowa.
+1. Biblioteka [NLTK](https://www.nltk.org/) dla Pythona posiada [implementację](http://www.nltk.org/howto/wordnet.html) miary Leacocka-Chodorowa,
+   ale nie posiada integracji z polską wersją WordNetu.
+1. Biblioteka [pywnxml](https://github.com/ppke-nlpg/pywnxml) pozwala na wczytanie polskiego WrodNetu (po tym jak plik
+   visdisc.xml zostanie poprawiony poprzez uzupełnienie tagu WNXML na początku oraz na końcu pliku). Nie posiada jednak
+   implementacji miary Leacocka-Chodorowa.
+1. Istnieje również dostęp do Słowosieci poprzez [webowe API](http://api.slowosiec.clarin-pl.eu/docs/index.html).
