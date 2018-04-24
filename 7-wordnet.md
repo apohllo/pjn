@@ -18,7 +18,7 @@ semantyczny słów.
    1. wypadek<sub>1</sub>, wypadek komunikacyjny<sub>1</sub>, kolizja<sub>2</sub>, zderzenie<sub>2</sub>,
       kolizja drogowa<sub>1</sub>, bezkolizyjny<sub>2</sub>, katastrofa budowlana<sub>1</sub>, wypadek
       drogowy<sub>1</sub>.
-1. Znajdź wartość miary [pokrewieństwa semantycznego Leacocka-Chodorowa](http://dit.unitn.it/~p2p/RelatedWork/Matching/Budanitsky+Hirst-2006.pdf) 
+1. Znajdź wartość miary [pokrewieństwa semantycznego Leacocka-Chodorowa](ftp://www-vhost.cs.toronto.edu/public_html/public_html/pub/gh/Budanitsky+Hirst-2001.pdf) 
    pomiędzy następującymi parami leksemów:
    1. szkoda<sub>2</sub> - wypadek<sub>1</sub>,
    1. kolizja<sub>2</sub> - szkoda majątkowa<sub>1</sub>,
