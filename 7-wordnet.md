@@ -26,13 +26,20 @@ semantyczny słów.
 
 ## Przydatne informacje
 
-1. Słowosieć jest słownikiem semantycznym, który posiada dwie podstawowe cechy:
+1. Słowosieć (polskie tłumaczenie terminu WordNet) jest słownikiem semantycznym, który posiada dwie podstawowe cechy:
    1. wyróżnia **znaczenia słów**, tzn. _zamek_ w znaczeniu _budowli_ oraz _zamek_ w znaczeniu _urządzenia_ posiadają osobne
       wpisy w słowosieci,
    1. opisuje znaczenia słów za pomocą **relacji semantycznych**, np. _zamek<sub>1</sub>_ jest **hiponimem**
       _budynku<sub>1</sub>_, a _zamek<sub>2</sub>_ jest **hiperonimem** _zatrzasku<sub>2</sub>_.
 1. Znaczenia słów w słowosieci są odróżniane za pomocą indeksu dolnego _zamek<sub>1</sub>_ oznacza pierwsze znaczenie, a
    _zamek<sub>2</sub>_ drugie znaczenie, itd.
+1. W Słowosieci wyróżnia się **leksemy** oraz **synsety**. Leksemy odpowiadają słowom, tzn. powiemy, że leksem z określonym
+   indeksem, ma określone znaczenie, np. _zamek<sub>2</sub>_ jest leksemem odnoszącym się do urządzenia do zamykania.
+   Ale znaczenie to nabywa on przez przynależność do określonego _synsetu_. Synset jest zbiorem leksemów, które dzielą
+   wspólne znaczenie, np. _szkoda<sub>2</sub>_, _uszczerbek<sub>1</sub>_, _strata<sub>1</sub>_ i _utrata<sub>1</sub>_ 
+   przynależą do jednego synsetu. Dlatego np. definicja przypisywana jest do synsetu oraz większość relacji jako swoje argumenty
+   posiadają synsety, a nie leksemy. Leksemy, które przynależą do jednego synsetu są synonimami (tzn. łączy je relacja
+   synonimii).
 1. Biblioteka [NLTK](https://www.nltk.org/) dla Pythona posiada [implementację](http://www.nltk.org/howto/wordnet.html) miary Leacocka-Chodorowa,
    ale nie posiada integracji z polską wersją WordNetu.
 1. Biblioteka [pywnxml](https://github.com/ppke-nlpg/pywnxml) pozwala na wczytanie polskiego WrodNetu (po tym jak plik
