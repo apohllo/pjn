@@ -1,7 +1,7 @@
 # Rozpoznawanie jednostek nazewniczych 
 
 Celem zajęć jest zaznajomienie studentów z mechanizmem rozpoznawania jednostek nazewniczych 
-(jednostek identyfikacyjnych, ang. Named Entity Recognition - NER), który jest jednym z
+(rozpoznawanie jednostek identyfikacyjnych, ang. Named Entity Recognition - NER), który jest jednym z
 podstawowych narzędzi ekstrakcji informacji.
 
 ## Zadanie
@@ -24,7 +24,7 @@ podstawowych narzędzi ekstrakcji informacji.
 1. Wykrywanie jednostek polega na rozpoznaniu początku wyrażenia, końca wyrażenia oraz kategorii semantycznej wyrażenia.
    Klasyfikacja semantyczna w sposób istotny wpływa na jakość wyników - im więcej rozpoznawanych kategorii, tym proces
    ten jest trudniejszy.
-1. W kontekście systemów dialogowych jednostki nazewnicze nazywane są również encjami (ang. entities).
+1. W kontekście systemów dialogowych jednostki nazewnicze nazywane są również _encjami_ (ang. entities).
 1. Najbardziej popularne algorytmy rozpoznawania jednostek nazewniczych bazują na formalizmie 
    [warunkowych pól losowych](https://en.wikipedia.org/wiki/Conditional_random_field) (ang. Conditional Random Fields -
    CRF). Jednak w ostatnim czasie coraz częściej wykorzystuje się algorytmy oparte o 
@@ -44,11 +44,11 @@ podstawowych narzędzi ekstrakcji informacji.
    ```
 1. Alternatywą względem NERa jest proces _linkowania do bazy wiedzy_ (ang. named entity linking/disambiguation - NED).
    W tym procesie zakłada się istnienie zewnętrznego zasobu zawierającego słownik nazw własnych (które mogą być
-   wieloznaczne). W wyniku rozpoznania wyrażenia oraz jegu ujednoznacznienia, możliwe jest nie tylko przypisanie
+   wieloznaczne). W wyniku rozpoznania wyrażenia oraz jego ujednoznacznienia, możliwe jest nie tylko przypisanie
    właściwej kategorii semantycznej, ale również zdobycie dodatkowych informacji na temat rozpoznanego wyrażenia.
 1. Najbardziej popularnymi zasobami wykorzystywanymi do treningu NERów oraz NEDów są Wikipedie ponieważ struktura
    wewnętrznych odnośników Wikipedii dostarcza cennych informacji które można wykorzystać jako cechy w algorytmie
    klasyfikacyjnym, bądź ujednoznaczniającym. 
-1. Jako referenycjne bazy wiedzy wykorzystuje się [DBpedię](http://wiki.dbpedia.org/) oraz 
+1. Jako referencyjne bazy wiedzy wykorzystuje się [DBpedię](http://wiki.dbpedia.org/) oraz 
    [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page). 
    Obie bazy wiedzy zawierają szereg ustrukturyzowanych danych pojawiających się w różnych wersjach Wikipedii.
