@@ -10,3 +10,4 @@ Zadania:
 1. [Tagowanie morfosyntaktyczne](5-tagging.md)
 1. [Klasyfikacja tekstu](6-classification.md)
 1. [Słowosieć](7-wordnet.md)
+1. [Rozpoznawanie jednostek nazewniczych](8-ner.md)
