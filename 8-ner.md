@@ -1,6 +1,7 @@
-# Rozpoznawanie jednostek nazewniczych (jednostek identyfikacyjnych, ang. Named Entity Recognition - NER)
+# Rozpoznawanie jednostek nazewniczych 
 
-Celem zajęć jest zaznajomienie studentów z mechanizmem rozpoznawania jednostek nazewniczych (NER), który jest jednym z
+Celem zajęć jest zaznajomienie studentów z mechanizmem rozpoznawania jednostek nazewniczych 
+(jednostek identyfikacyjnych, ang. Named Entity Recognition - NER), który jest jednym z
 podstawowych narzędzi ekstrakcji informacji.
 
 ## Zadanie
