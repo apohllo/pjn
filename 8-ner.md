@@ -17,7 +17,9 @@ podstawowych narzędzi ekstrakcji informacji.
       `nam_fac_bridge`, `nam_liv_animal`, `nam_loc_gpe`, itd.,
    1. na drugim wykresie przedstaw zgrubną klasyfikację wyrażeń. tzn. uwzględniając klasy takie jak
       `nam_adj`, `nam_eve`, `nam_fac`, `nam_liv`, itd.
-1. Przedstaw 100 najczęściej rozpoznanych wyrażeń, wraz z podaniem liczby ich wystąpień.
+1. Przedstaw 100 najczęściej rozpoznanych wyrażeń, wraz z podaniem liczby ich wystąpień oraz kategorii semantycznej
+   (tzn. niskopoziomowej (drobnoziarnistej) klasy przypisanej przez NER).
+1. Przedstaw 10 najczęstszych wyrażeń, dla każdej wysokopoziomowej (zgrubnej) klasy wyrażeń.
 1. Oceń przydatność NERa dla danych jakimi są orzeczenia sądów.
 
 ## Przydatne informacje
@@ -55,3 +57,7 @@ podstawowych narzędzi ekstrakcji informacji.
 1. Jako referencyjne bazy wiedzy wykorzystuje się [DBpedię](http://wiki.dbpedia.org/) oraz 
    [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page). 
    Obie bazy wiedzy zawierają szereg ustrukturyzowanych danych pojawiających się w różnych wersjach Wikipedii.
+1. Istotnym elementem procesu NER jest określenie zbioru wykorzystywanych klas. Różne narzędzia dysponują różnym zbiorem
+   klasy. Przykładem prostego schematu klasyfikacja jest zgrubna klasyfikacja wykorzystywana w Liner2, a 
+   przykładem rozbudowanego schematu klasyfikacji jest 
+   [ontologia DBpedii](http://wiki.dbpedia.org/services-resources/ontology). 
