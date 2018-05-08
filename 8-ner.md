@@ -13,8 +13,10 @@ podstawowych narzędzi ekstrakcji informacji.
 1. Z dokumentów usuń znaczniki HTML (jeśli występują).
 1. Rozpoznaj jednostki nazewnicze w dokumentach, korzystając z API Clarin oraz wykorzystując model `n82`. 
 1. Przedstaw liczność rozpoznanych klas w postaci dwóch wykresów:
-   1. na pierwszy wykresie przedstaw drobnoziarnistą klasyfikację wyrażeń,
-   1. na drugim wykresie przedstaw zgrubną klasyfikację wyrażeń.
+   1. na pierwszy wykresie przedstaw drobnoziarnistą klasyfikację wyrażeń, tzn. uwzględniając klasy takie jak
+      `nam_fac_bridge`, `nam_liv_animal`, `nam_loc_gpe`, itd.,
+   1. na drugim wykresie przedstaw zgrubną klasyfikację wyrażeń. tzn. uwzględniając klasy takie jak
+      `nam_adj`, `nam_eve`, `nam_fac`, `nam_liv`, itd.
 1. Przedstaw 100 najczęściej rozpoznanych wyrażeń, wraz z podaniem liczby ich wystąpień.
 1. Oceń przydatność NERa dla danych jakimi są orzeczenia sądów.
 
