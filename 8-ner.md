@@ -10,6 +10,7 @@ podstawowych narzędzi ekstrakcji informacji.
    [Wytyczne KPWr - jednostki identyfikacyjne](http://clarin-pl.eu/pliki/warsztaty/WytyczneKPWr-JednostkiIdentyfikacyjne.pdf).
 1. Zapoznaj się z [API serwisu NER](http://nlp.pwr.wroc.pl/redmine/projects/nlprest2/wiki) w systemie [Clarin](http://ws.clarin-pl.eu/ner.shtml).
 1. Wybierz 100 pierwszych (sortując wg daty) orzeczeń w danym roku.
+1. Z dokumentów usuń znaczniki HTML (jeśli występują).
 1. Rozpoznaj jednostki nazewnicze w dokumentach, korzystając z API Clarin oraz wykorzystując model `n82`. 
 1. Przedstaw liczność rozpoznanych klas w postaci dwóch wykresów:
    1. na pierwszy wykresie przedstaw drobnoziarnistą klasyfikację wyrażeń,
