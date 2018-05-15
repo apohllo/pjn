@@ -11,3 +11,4 @@ Zadania:
 1. [Klasyfikacja tekstu](6-classification.md)
 1. [Słowosieć](7-wordnet.md)
 1. [Rozpoznawanie jednostek nazewniczych](8-ner.md)
+1. [word2vec](9-word2vec.md)
