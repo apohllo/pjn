@@ -21,14 +21,17 @@ Celem zadania jest ekstracja wyrażeń wielosegmentowych, występujących w teks
 
 ## Przydatne informacje
 
-1. Bigramem nazywamy ciąg składający się z dwóch słów.
-1. Unigramem nazywamy ciąg składający się z jednego słowa.
-1. n-gramem nazywamy ciąg składający się z n słów.
+1. Unigramem nazywamy ciąg składający się z jednego słowa; bigramem - ciąg składający się z dwóch słów; n-gramem - ciąg składający się z n słów.
 1. Punktowa informacja wzajemna jest miarą wykorzystywaną do oceny korelacji pomiędzy zjawiskami. 
-   Zbudowana jest na założeniu, że zjawiska, których prawdopodobieństwo współwystępowania jest istotnie większe
-   od iloczynu prawdopodobieństw każdego ze zjawisk z osobna, to znaczy, że są one silnie skolerowane.
-1. Statystyka logarytmiczna oparta o rozkład dwumienny (nie znalazłem niestety oficjalnego tłumaczenia ang. *log
-   likelihood ratio*) ma bardziej rozbudowane założenia. W skrócie można napisać, że mierzy ona odchylenie pomiędzy
-   współwystępowaniem, a wystepowanie na osobności, biorąc za podstawę rozkład dwumienny.
+   Opiera się na założeniu, że zjawiska, których prawdopodobieństwo współwystępowania jest istotnie większe
+   od iloczynu prawdopodobieństw wystąpienia każdego ze zjawisk z osobna, są ze sobą silnie skolerowane.
+1. Statystyka logarytmiczna oparta o rozkład dwumienny ma bardziej rozbudowane założenia. 
+   W skrócie można napisać, że testuje istotność hipotezy, że zjawiska są skorelowane,
+   biorąc za podstawę rozkład dwumienny występowania słów w tekście.
 1. Metody przedstawione w tym zadaniu mogą być z powodzeniem stosowane również w problemie identyfikacji wyrazów oraz
    zwrotów charakterystycznych dla określonej dziedziny wiedzy.
+1. Narzędzie [SRI LM](http://www.speech.sri.com/projects/srilm/) umożliwia efektywne wyliczenia statystyk n-gramów.
+   Pozwala również na budowanie modeli językowych w oparciu o tę statystykę.
+1. Bardziej zaawansowane algorytmy takie jak np. [AutoPhrase](https://github.com/shangjingbo1226/AutoPhrase) biorą pod
+   uwagę znacznie więcej własności wyrażenia: cechy morfosyntaktyczne, konteksty ich występowania oraz wykorzystują dane
+   np. z Wikipedii w celu określenia zbioru cech, które identyfikuje poprawne wyrażenia wielosegmentowe.
